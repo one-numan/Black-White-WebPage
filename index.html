@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black And White</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>     </section>
+    <section>
+
+    <h2>Black and White</h2> 
+    <p>Introduction
+The objective of this chapter is to explain<br> the importance of analysis of algorithms, their notations,
+relationships and solving as many problems as possible.<br> We first concentrate on understanding the
+importance of analysis and then slowly move<br> towards analyzing the algorithms with different notations and
+finally, the problems. After completion of<br> this chapter you should be able to find the complexity of any
+given algorithm (especially recursive functions).<br>
+What is an Algorithm?<br>[<br>] Milton Abramowitz and Irene A. Stegun, editors. Handbook of Mathematical Functions.
+Dover, <br>965.
+[2] G. M. Adel’son-Vel’skiı̆ and E. M. Landis. An algorithm for the organization of information.
+Soviet Mathematics Doklady, 3(5):<br>259–<br>263, <br>962.
+[3] Alok Aggarwal and Jeffrey Scott Vitter. The input/output complexity of sorting and related
+problems. Communications of the ACM, 3<br>(9):<br><br><br>6–<br><br>27, <br>988.
+[4] Manindra Agrawal, Neeraj Kayal, and Nitin Saxena. PRIMES is in P. Annals of Mathe-
+matics, <br>60(2):78<br>–793, 2004.
+[5] Alfred V. Aho, John E. Hopcroft, and Jeffrey D. Ullman. The Design and Analysis of
+Computer Algorithms. Addison-Wesley, <br>974.
+[6] Alfred V. Aho, John E. Hopcroft, and Jeffrey D. Ullman. Data Structures and Algorithms.
+Addison-Wesley, <br>983.
+[7] Ravindra K. Ahuja, Thomas L. Magnanti, and James B. Orlin. Network Flows: Theory,
+Algorithms, and Applications. Prentice Hall, <br>993.
+[8] Ravindra K. Ahuja, Kurt Mehlhorn, James B. Orlin, and Robert E. Tarjan. Faster algorithms
+for the shortest path problem. Journal of the ACM, 37:2<br>3–223, <br>990.
+[9] Ravindra K. Ahuja and James B. Orlin. A fast and simple algorithm for the maximum flow
+problem. Operations Research, 37(5):748–759, <br>989.
+[<br>0] Ravindra K. Ahuja, James B. Orlin, and Robert E. Tarjan. Improved time bounds for the
+maximum flow problem. SIAM Journal on Computing, <br>8(5):939–954, <br>989.
+[<br><br>] Miklós Ajtai, Nimrod Megiddo, and Orli Waarts. Improved algorithms and analysis for
+secretary problems and generalizations. In Proceedings of the 36th Annual Symposium on
+Foundations of Computer Science, pages 473–482, <br>995.
+[<br>2] Selim G. Akl. The Design and Analysis of Parallel Algorithms. Prentice Hall, <br>989.
+[<br>3] Mohamad Akra and Louay Bazzi. On the solution of linear recurrence equations. Compu-
+tational Optimization and Applications, <br>0(2):<br>95–2<br>0, <br>998.
+[<br>4] Noga Alon. Generating pseudo-random permutations and maximum flow algorithms. In-
+formation Processing Letters, 35:20<br>–204, <br>990.<br>232
+Bibliography
+[<br>5] Arne Andersson. Balanced search trees made simple. In Proceedings of the Third Workshop
+on Algorithms and Data Structures, volume 709 of Lecture Notes in Computer Science,
+pages 60–7<br>. Springer, <br>993.
+[<br>6] Arne Andersson. Faster deterministic sorting and searching in linear space. In Proceedings
+of the 37th Annual Symposium on Foundations of Computer Science, pages <br>35–<br>4<br>, <br>996.
+[<br>7] Arne Andersson, Torben Hagerup, Stefan Nilsson, and Rajeev Raman. Sorting in linear
+time? Journal of Computer and System Sciences, 57:74–93, <br>998.
+[<br>8] Tom M. Apostol. Calculus, volume <br>. Blaisdell Publishing Company, second edition, <br>967.
+[<br>9] Nimar S. Arora, Robert D. Blumofe, and C. Greg Plaxton. Thread scheduling for multipro-
+grammed multiprocessors. In Proceedings of the <br>0th Annual ACM Symposium on Parallel
+Algorithms and Architectures, pages <br><br>9–<br>29, <br>998.
+[20] Sanjeev Arora. Probabilistic checking of proofs and the hardness of approximation prob-
+lems. PhD thesis, University of California, Berkeley, <br>994.
+[2<br>] Sanjeev Arora. The approximability of NP-hard problems. In Proceedings of the 30th
+Annual ACM Symposium on Theory of Computing, pages 337–348, <br>998.
+[22] Sanjeev Arora. Polynomial time approximation schemes for euclidean traveling salesman
+and other geometric problems. Journal of the ACM, 45(5):753–782, <br>998.
+[23] Sanjeev Arora and Carsten Lund. Hardness of approximations. In Dorit S. Hochbaum,
+editor, Approximation Algorithms for NP-Hard Problems, pages 399–446. PWS Publishing
+Company, <br>997.
+[24] Javed A. Aslam. A simple bound on the expected height of a randomly built binary search
+tree. Technical Report TR200<br>-387, Dartmouth College Department of Computer Science,
+200<br>.
+[25] Mikhail J. Atallah, editor. Algorithms and Theory of Computation Handbook. CRC Press,
+<br>999.
+[26] G. Ausiello, P. Crescenzi, G. Gambosi, V. Kann, A. Marchetti-Spaccamela, and M. Protasi.
+Complexity and Approximation: Combinatorial Optimization Problems and Their Approx-
+imability Properties. Springer, <br>999.
+[27] Shai Avidan and Ariel Shamir. Seam carving for content-aware image resizing. ACM Trans-
+actions on Graphics, 26(3), article <br>0, 2007.
+[28] Sara Baase and Alan Van Gelder. Computer Algorithms: Introduction to Design and Anal-
+ysis. Addison-Wesley, third edition, 2000.
+[29] Eric Bach. Private communication, <br>989.
+[30] Eric Bach. Number-theoretic algorithms. In Annual Review of Computer Science, volume 4,
+pages <br><br>9–<br>72. Annual Reviews, Inc., <br>990.
+[3<br>] Eric Bach and Jeffrey Shallit. Algorithmic Number Theory—Volume I: Efficient Algorithms.
+The MIT Press, <br>996.
+[32] David H. Bailey, King Lee, and Horst D. Simon. Using Strassen’s algorithm to accelerate
+the solution of linear systems. The Journal of Supercomputing, 4(4):357–37<br>, <br>990.Bibliography
+<br>233
+[33] Surender Baswana, Ramesh Hariharan, and Sandeep Sen. Improved decremental algo-
+rithms for maintaining transitive closure and all-pairs shortest paths. Journal of Algorithms,
+62(2):74–92, 2007.
+[34] R. Bayer. Symmetric binary B-trees: Data structure and maintenance algorithms. Acta
+Informatica, <br>(4):290–306, <br>972.
+[35] R. Bayer and E. M. McCreight. Organization and maintenance of large ordered indexes.
+Acta Informatica, <br>(3):<br>73–<br>89, <br>972.
+[36] Pierre Beauchemin, Gilles Brassard, Claude Crépeau, Claude Goutier, and Carl Pomerance.
+The generation of random numbers that are probably prime. Journal of Cryptology, <br>(<br>):53–
+64, <br>988.
+[37] Richard Bellman. Dynamic Programming. Princeton University Press, <br>957.
+[38] Richard Bellman. On a routing problem. Quarterly of Applied Mathematics, <br>6(<br>):87–90,
+<br>958.
+[39] Michael Ben-Or. Lower bounds for algebraic computation trees. In Proceedings of the
+Fifteenth Annual ACM Symposium on Theory of Computing, pages 80–86, <br>983.
+[40] Michael A. Bender, Erik D. Demaine, and Martin Farach-Colton. Cache-oblivious B-trees.
+In Proceedings of the 4<br>st Annual Symposium on Foundations of Computer Science, pages
+399–409, 2000.
+[4<br>] Samuel W. Bent and John W. John. Finding the median requires 2n comparisons. In Pro-
+ceedings of the Seventeenth Annual ACM Symposium on Theory of Computing, pages 2<br>3–
+2<br>6, <br>985.
+[42] Jon L. Bentley. Writing Efficient Programs. Prentice Hall, <br>982.
+[43] Jon L. Bentley. Programming Pearls. Addison-Wesley, <br>986.
+[44] Jon L. Bentley, Dorothea Haken, and James B. Saxe. A general method for solving divide-
+and-conquer recurrences. SIGACT News, <br>2(3):36–44, <br>980.
+[45] Daniel Bienstock and Benjamin McClosky. Tightening simplex mixed-integer sets with
+guaranteed bounds. Optimization Online, July 2008.
+[46] Patrick Billingsley. Probability and Measure. John Wiley & Sons, second edition, <br>986.
+[47] Guy E. Blelloch. Scan Primitives and Parallel Vector Models. PhD thesis, Department of
+Electrical Engineering and Computer Science, MIT, <br>989. Available as MIT Laboratory for
+Computer Science Technical Report MIT/LCS/TR-463.
+[48] Guy E. Blelloch. Programming parallel algorithms.
+39(3):85–97, <br>996.
+Communications of the ACM,
+[49] Guy E. Blelloch, Phillip B. Gibbons, and Yossi Matias. Provably efficient scheduling for
+languages with fine-grained parallelism. In Proceedings of the 7th Annual ACM Symposium
+on Parallel Algorithms and Architectures, pages <br>–<br>2, <br>995.
+[50] Manuel Blum, Robert W. Floyd, Vaughan Pratt, Ronald L. Rivest, and Robert E. Tarjan.
+Time bounds for selection. Journal of Computer and System Sciences, 7(4):448–46<br>, <br>973.
+[5<br>] Robert D. Blumofe, Christopher F. Joerg, Bradley C. Kuszmaul, Charles E. Leiserson,
+Keith H. Randall, and Yuli Zhou. Cilk: An efficient multithreaded runtime system. Journal
+of Parallel and Distributed Computing, 37(<br>):55–69, <br>996.<br>234
+Bibliography
+[52] Robert D. Blumofe and Charles E. Leiserson. Scheduling multithreaded computations by
+work stealing. Journal of the ACM, 46(5):720–748, <br>999.
+[53] Béla Bollobás. Random Graphs. Academic Press, <br>985.
+[54] Gilles Brassard and Paul Bratley. Fundamentals of Algorithmics. Prentice Hall, <br>996.
+[55] Richard P. Brent. The parallel evaluation of general arithmetic expressions. Journal of the
+ACM, 2<br>(2):20<br>–206, <br>974.
+[56] Richard P. Brent. An improved Monte Carlo factorization algorithm. BIT, 20(2):<br>76–<br>84,
+<br>980.
+[57] J. P. Buhler, H. W. Lenstra, Jr., and Carl Pomerance. Factoring integers with the number
+field sieve. In A. K. Lenstra and H. W. Lenstra, Jr., editors, The Development of the Number
+Field Sieve, volume <br>554 of Lecture Notes in Mathematics, pages 50–94. Springer, <br>993.
+[58] J. Lawrence Carter and Mark N. Wegman. Universal classes of hash functions. Journal of
+Computer and System Sciences, <br>8(2):<br>43–<br>54, <br>979.
+[59] Barbara Chapman, Gabriele Jost, and Ruud van der Pas. Using OpenMP: Portable Shared
+Memory Parallel Programming. The MIT Press, 2007.
+[60] Bernard Chazelle. A minimum spanning tree algorithm with inverse-Ackermann type com-
+plexity. Journal of the ACM, 47(6):<br>028–<br>047, 2000.
+[6<br>] Joseph Cheriyan and Torben Hagerup. A randomized maximum-flow algorithm. SIAM
+Journal on Computing, 24(2):203–226, <br>995.
+[62] Joseph Cheriyan and S. N. Maheshwari. Analysis of preflow push algorithms for maximum
+network flow. SIAM Journal on Computing, <br>8(6):<br>057–<br>086, <br>989.
+[63] Boris V. Cherkassky and Andrew V. Goldberg. On implementing the push-relabel method
+for the maximum flow problem. Algorithmica, <br>9(4):390–4<br>0, <br>997.
+[64] Boris V. Cherkassky, Andrew V. Goldberg, and Tomasz Radzik. Shortest paths algorithms:
+Theory and experimental evaluation. Mathematical Programming, 73(2):<br>29–<br>74, <br>996.
+[65] Boris V. Cherkassky, Andrew V. Goldberg, and Craig Silverstein. Buckets, heaps, lists and
+monotone priority queues. SIAM Journal on Computing, 28(4):<br>326–<br>346, <br>999.
+[66] H. Chernoff. A measure of asymptotic efficiency for tests of a hypothesis based on the sum
+of observations. Annals of Mathematical Statistics, 23(4):493–507, <br>952.
+[67] Kai Lai Chung. Elementary Probability Theory with Stochastic Processes. Springer, <br>974.
+[68] V. Chvátal. A greedy heuristic for the set-covering problem. Mathematics of Operations
+Research, 4(3):233–235, <br>979.
+[69] V. Chvátal. Linear Programming. W. H. Freeman and Company, <br>983.
+[70] V. Chvátal, D. A. Klarner, and D. E. Knuth. Selected combinatorial research problems.
+Technical Report STAN-CS-72-292, Computer Science Department, Stanford University,
+<br>972.
+[7<br>] Cilk Arts, Inc., Burlington, Massachusetts. Cilk++ Programmer’s Guide, 2008. Available
+at http://www.cilk.com/archive/docs/cilk<br>guide.Bibliography
+<br>235
+[72] Alan Cobham. The intrinsic computational difficulty of functions. In Proceedings of the
+<br>964 Congress for Logic, Methodology, and the Philosophy of Science, pages 24–30. North-
+Holland, <br>964.
+[73] H. Cohen and H. W. Lenstra, Jr. Primality testing and Jacobi sums. Mathematics of Com-
+putation, 42(<br>65):297–330, <br>984.
+[74] D. Comer. The ubiquitous B-tree. ACM Computing Surveys, <br><br>(2):<br>2<br>–<br>37, <br>979.
+[75] Stephen Cook. The complexity of theorem proving procedures. In Proceedings of the Third
+Annual ACM Symposium on Theory of Computing, pages <br>5<br>–<br>58, <br>97<br>.
+[76] James W. Cooley and John W. Tukey. An algorithm for the machine calculation of complex
+Fourier series. Mathematics of Computation, <br>9(90):297–30<br>, <br>965.
+[77] Don Coppersmith. Modifications to the number field sieve.
+6(3):<br>69–<br>80, <br>993.
+Journal of Cryptology,
+[78] Don Coppersmith and Shmuel Winograd. Matrix multiplication via arithmetic progression.
+Journal of Symbolic Computation, 9(3):25<br>–280, <br>990.
+[79] Thomas H. Cormen, Thomas Sundquist, and Leonard F. Wisniewski. Asymptotically tight
+bounds for performing BMMC permutations on parallel disk systems. SIAM Journal on
+Computing, 28(<br>):<br>05–<br>36, <br>998.
+[80] Don Dailey and Charles E. Leiserson. Using Cilk to write multiprocessor chess programs.
+In H. J. van den Herik and B. Monien, editors, Advances in Computer Games, volume 9,
+pages 25–52. University of Maastricht, Netherlands, 200<br>.
+[8<br>] Paolo D’Alberto and Alexandru Nicolau. Adaptive Strassen’s matrix multiplication. In
+Proceedings of the 2<br>st Annual International Conference on Supercomputing, pages 284–
+292, June 2007.
+[82] Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani. Algorithms. McGraw-Hill,
+2008.
+[83] Roman Dementiev, Lutz Kettner, Jens Mehnert, and Peter Sanders. Engineering a sorted list
+data structure for 32 bit keys. In Proceedings of the Sixth Workshop on Algorithm Engineer-
+ing and Experiments and the First Workshop on Analytic Algorithmics and Combinatorics,
+pages <br>42–<br>5<br>, January 2004.
+[84] Camil Demetrescu and Giuseppe F. Italiano. Fully dynamic all pairs shortest paths with real
+edge weights. Journal of Computer and System Sciences, 72(5):8<br>3–837, 2006.
+[85] Eric V. Denardo and Bennett L. Fox. Shortest-route methods: <br>. Reaching, pruning, and
+buckets. Operations Research, 27(<br>):<br>6<br>–<br>86, <br>979.
+[86] Martin Dietzfelbinger, Anna Karlin, Kurt Mehlhorn, Friedhelm Meyer auf der Heide, Hans
+Rohnert, and Robert E. Tarjan. Dynamic perfect hashing: Upper and lower bounds. SIAM
+Journal on Computing, 23(4):738–76<br>, <br>994.
+[87] Whitfield Diffie and Martin E. Hellman. New directions in cryptography. IEEE Transac-
+tions on Information Theory, IT-22(6):644–654, <br>976.
+[88] E. W. Dijkstra. A note on two problems in connexion with graphs. Numerische Mathematik,
+<br>(<br>):269–27<br>, <br>959.<br>236
+Bibliography
+[89] E. A. Dinic. Algorithm for solution of a problem of maximum flow in a network with power
+estimation. Soviet Mathematics Doklady, <br><br>(5):<br>277–<br>280, <br>970.
+[90] Brandon Dixon, Monika Rauch, and Robert E. Tarjan. Verification and sensitivity analysis
+of minimum spanning trees in linear time. SIAM Journal on Computing, 2<br>(6):<br><br>84–<br><br>92,
+<br>992.
+[9<br>] John D. Dixon. Factorization and primality tests. The American Mathematical Monthly,
+9<br>(6):333–352, <br>984.
+[92] Dorit Dor, Johan Håstad, Staffan Ulfberg, and Uri Zwick. On lower bounds for selecting
+the median. SIAM Journal on Discrete Mathematics, <br>4(3):299–3<br><br>, 200<br>.
+[93] Dorit Dor and Uri Zwick. Selecting the median. SIAM Journal on Computing, 28(5):<br>722–
+<br>758, <br>999.
+[94] Dorit Dor and Uri Zwick. Median selection requires .2 C /n comparisons. SIAM Journal
+on Discrete Mathematics, <br>4(3):3<br>2–325, 200<br>.
+[95] Alvin W. Drake. Fundamentals of Applied Probability Theory. McGraw-Hill, <br>967.
+[96] James R. Driscoll, Harold N. Gabow, Ruth Shrairman, and Robert E. Tarjan. Relaxed heaps:
+An alternative to Fibonacci heaps with applications to parallel computation. Communica-
+tions of the ACM, 3<br>(<br><br>):<br>343–<br>354, <br>988.
+[97] James R. Driscoll, Neil Sarnak, Daniel D. Sleator, and Robert E. Tarjan. Making data
+structures persistent. Journal of Computer and System Sciences, 38(<br>):86–<br>24, <br>989.
+[98] Derek L. Eager, John Zahorjan, and Edward D. Lazowska. Speedup versus efficiency in
+parallel systems. IEEE Transactions on Computers, 38(3):408–423, <br>989.
+[99] Herbert Edelsbrunner. Algorithms in Combinatorial Geometry, volume <br>0 of EATCS Mono-
+graphs on Theoretical Computer Science. Springer, <br>987.
+[<br>00] Jack Edmonds. Paths, trees, and flowers. Canadian Journal of Mathematics, <br>7:449–467,
+<br>965.
+[<br>0<br>] Jack Edmonds. Matroids and the greedy algorithm. Mathematical Programming, <br>(<br>):<br>27–
+<br>36, <br>97<br>.
+[<br>02] Jack Edmonds and Richard M. Karp. Theoretical improvements in the algorithmic effi-
+ciency for network flow problems. Journal of the ACM, <br>9(2):248–264, <br>972.
+[<br>03] Shimon Even. Graph Algorithms. Computer Science Press, <br>979.
+[<br>04] William Feller. An Introduction to Probability Theory and Its Applications. John Wiley &
+Sons, third edition, <br>968.
+[<br>05] Robert W. Floyd. Algorithm 97 (SHORTEST PATH). Communications of the ACM,
+5(6):345, <br>962.
+[<br>06] Robert W. Floyd. Algorithm 245 (TREESORT). Communications of the ACM, 7(<br>2):70<br>,
+<br>964.
+[<br>07] Robert W. Floyd. Permuting information in idealized two-level storage. In Raymond E.
+Miller and James W. Thatcher, editors, Complexity of Computer Computations, pages <br>05–
+<br>09. Plenum Press, <br>972.Bibliography
+<br>237<br>
+Just to understand better,<br> let us consider the problem of preparing an omelet. For preparing omelet, general
+steps which we follow are:<br>
+<br>) Get the frying pan.<br>
+2) Get the oil.<br>
+a. Do w<br>e have oil?<br>
+i. If y<br>es, put it in the pan.
+ii. If <br>no, do we want to buy oil?
+<br>. If y<br>es, then go out and buy.
+2. If n<br>o, we can terminate.
+3) Turn<br> on the stove, etc..
+What we<br> are doing is, for a given problem (preparing an omelet), giving step by step procedure for solving
+it. F<br>ormal definition of an algorithm can be given as:
+An algorithm is the step-by-step instructions to a given problem.
+<br>One important note to remember while writing the algorithms is: we do not have to prove each step of the
+<br>algorithm.
+</section>
+<section ></section>
+<div class="layer"></div>
+
+</body>
+</html>
